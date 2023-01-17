@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/LinksCutter/static/css/main.a64a360b.css",
+    "main.js": "/LinksCutter/static/js/main.80506354.js",
+    "index.html": "/LinksCutter/index.html",
+    "main.a64a360b.css.map": "/LinksCutter/static/css/main.a64a360b.css.map",
+    "main.80506354.js.map": "/LinksCutter/static/js/main.80506354.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a64a360b.css",
+    "static/js/main.80506354.js"
+  ]
+}
