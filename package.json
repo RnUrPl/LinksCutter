@@ -1,0 +1,16 @@
+{
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development concurrently \"npm run server --prefix server\" \"npm run start --prefix client\"",
+        "client:isntall": "npm install --prefix client",
+        "client:build": "npm run build --prefix client"
+    },
+    "devDependencies": {
+        "concurrently": "^7.2.2"
+    },
+    "dependencies": {
+        "@reduxjs/toolkit": "^1.9.1",
+        "cross-env": "^7.0.3",
+        "http-proxy-middleware": "^2.0.6",
+        "materialize-css": "^1.0.0-rc.2"
+    }
+}

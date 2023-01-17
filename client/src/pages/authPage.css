@@ -1,0 +1,53 @@
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .col {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .card {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 24px;
+  }
+  
+  .input-field {
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+  }
+  
+  .input-field input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+  }
+  
+  .card-action button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  
+  
+  .btn.grey {
+    background-color: grey;
+  }
+  
+  .btn.grey:hover {
+    background-color: lightgrey;
+  }
+  

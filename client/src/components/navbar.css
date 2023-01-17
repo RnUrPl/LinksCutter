@@ -1,0 +1,38 @@
+nav {
+    position: relative;
+  }
+  
+  .brand-logo {
+    margin-right: 10px;
+    transition: color 0.2s ease;
+    font-size: 24px;
+    margin-left: 20px;
+  }
+  
+  ul {
+    margin-right: 20px;
+  }
+  
+  ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.2s ease;
+  }
+  
+  ul li a:hover {
+    color: #263238;
+  }
+
+  .brand-logo:hover {
+    color: #263238;
+  }
+
+
+  
+  

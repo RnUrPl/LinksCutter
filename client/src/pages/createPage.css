@@ -1,0 +1,37 @@
+.row {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 100%;
+}
+
+.col {
+  width: 100%;
+  max-width: 800px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px #ccc;
+  margin-bottom: 20px;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  
+}
+
+.input-field ::placeholder {
+  color: white
+  
+}
+
+.input-field input:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px 0px #aaa;
+}
