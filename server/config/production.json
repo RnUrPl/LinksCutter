@@ -1,0 +1,9 @@
+{
+    "port": 5000,
+    "jwtSecret":"LinksCutter",
+    "mongoURI" : "mongodb+srv://plrn:8828@cluster0.8syc5kq.mongodb.net/?retryWrites=true&w=majority",
+    "baseURL" : "http://localhost:5000/",
+    "jwtAccessSecret" : "plrn4pf",
+    "jwtRefreshSecret" : "plrn4pfgang"
+    
+}
