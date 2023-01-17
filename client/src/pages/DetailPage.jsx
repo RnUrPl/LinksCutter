@@ -1,7 +1,6 @@
 import React, {useCallback, useContext, useEffect, useState} from 'react'
 import {useParams} from 'react-router-dom'
 import {LinkCard} from '../components/LinkCard'
-import useAuth from '../hooks/useAuth'
 import { getLinkById } from '../http/linksApi'
 
  const DetailPage = () => {
@@ -18,6 +17,8 @@ import { getLinkById } from '../http/linksApi'
   useEffect(() => {
     getLink(linkId)
   }, [linkId])
+
+
 
 
   return (
