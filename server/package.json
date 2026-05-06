@@ -25,6 +25,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.4.0",
     "moongose": "^1.0.0",
+    "path": "^0.12.7",
     "react-redux": "^8.0.5",
     "shortid": "^2.2.16"
   },
