@@ -1,37 +1,79 @@
-.row {
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500&display=swap');
+
+.create-root {
+  min-height: 93vh;
   display: flex;
-  justify-content:center;
   align-items: center;
-  height: 100%;
-}
-
-.col {
-  width: 100%;
-  max-width: 800px;
-}
-
-.input-field {
-  width: 100%;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px 0px #ccc;
-  margin-bottom: 20px;
-}
-
-.input-field input {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
+  justify-content: center;
+  font-family: 'DM Sans', sans-serif;
+  padding: 2rem 1rem;
   
 }
 
-.input-field ::placeholder {
-  color: white
-  
+.create-inner {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
 }
 
-.input-field input:focus {
+.create-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 28px;
+  color: #1a1a1a;
+  margin: 0 0 0.4rem;
+}
+
+.create-hint {
+  font-size: 13px;
+  color: #888;
+  margin: 0 0 2rem;
+}
+
+.create-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.create-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 56px 14px 18px;
+  font-size: 15px;
+  font-family: 'DM Sans', sans-serif;
+  background: #ffffff;
+  border: 0.5px solid rgba(0,0,0,0.15);
+  border-radius: 12px;
+  color: #1a1a1a;
   outline: none;
-  box-shadow: 0px 0px 10px 0px #aaa;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.create-input::placeholder {
+  color: #aaa;
+}
+
+.create-input:focus {
+  border-color: #185FA5;
+  box-shadow: 0 0 0 3px rgba(24, 95, 165, 0.12);
+}
+
+.create-enter-hint {
+  position: absolute;
+  right: 14px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #aaa;
+  background: #f0f0ee;
+  border: 0.5px solid rgba(0,0,0,0.1);
+  border-radius: 5px;
+  padding: 2px 6px;
+  pointer-events: none;
+  transition: color 0.15s, background 0.15s;
+}
+
+.create-input:focus ~ .create-enter-hint {
+  color: #185FA5;
+  border-color: rgba(24,95,165,0.3);
+  background: rgba(24,95,165,0.07);
 }

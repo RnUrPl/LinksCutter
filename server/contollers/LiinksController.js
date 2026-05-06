@@ -1,14 +1,19 @@
 const {Link} = require("../models/Links")
-const config = require('config')
 const shortid = require('shortid')
 
 
 class LinksController {
     async generate(req,res,next){
         try {
-            const baseUrl = config.get('baseURL')
+            const baseUrl = `${process.env.BASE_URL}`
             const {from} = req.body
 
+            try {
+                new URL(from)
+            } catch {
+                return res.status(400).json({ message: 'Введите корректную ссылку' })
+            }
+            
         
             const code = shortid.generate()
             const existing = await Link.findOne({ from })

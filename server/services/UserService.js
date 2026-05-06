@@ -1,7 +1,6 @@
 const {User} = require("../models/User")
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
-const config = require('config')
 const UserDto = require("../dtos/userDto")
 const tokenService = require('./TokenService')
 const { Token } = require("../models/token")

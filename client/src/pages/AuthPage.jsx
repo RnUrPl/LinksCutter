@@ -57,65 +57,46 @@ import { useMessage } from '../hooks/useMessage';
       };
 
   return (
-    <div >
-        <div className='container'>
-            <div className='col s6 offset-s3'>
-                <h1></h1>
-                <div className='card blue lighten-3' >
-                    <div className='card-content white-text'>
-                        <span className='card-title'>
-                            Authorizathion
-                        </span>
-                        
-                            
-                        
-                        <div className="input-field col s12 ">
-                            <input
-                            id="email"
-                            type="text"
-                            name="email"
-                            className="yellow-input " 
-                            onChange={changeHandler}
-                            />
-                             <label htmlFor='password'>Email</label>
-                        </div>
+  <div className="auth-root">
+    <div className="auth-card">
+      <h1 className="auth-logo">Welcome</h1>
+      <p className="auth-subtitle">Sign in or create a new account</p>
 
-                        <div className="input-field col s12">
-                            <input
-                            id="password"
-                            type="password"
-                            name="password"
-                            className="yellow-input"
-                            onChange={changeHandler}
-                            />
-                            <label htmlFor='password'>Password</label>
-                        </div>
-                    </div>
-                    
-                    <div className='cards-action'>
-                        <button
-                            className="btn blue accent-1"
-                            style={{marginRight: 10}}
-                            onClick={authHandler}
-                            name = 'login'
-                        >
-                            Login
-                        </button>
-                        <button
-                            className="btn blue accent-1"
-                            onClick={authHandler}
-                            name = 'registration'
-                        >
-                            Registration
-                        </button>
-                    </div>
-                </div>
-                
-            </div>   
-        </div>
+      <div className="auth-field">
+        <label className="auth-label" htmlFor="email">Email</label>
+        <input
+          className="auth-input"
+          id="email"
+          type="text"
+          name="email"
+          placeholder="you@example.com"
+          onChange={changeHandler}
+        />
+      </div>
 
+      <div className="auth-field">
+        <label className="auth-label" htmlFor="password">Password</label>
+        <input
+          className="auth-input"
+          id="password"
+          type="password"
+          name="password"
+          placeholder="••••••••"
+          onChange={changeHandler}
+        />
+      </div>
+
+      <div className="auth-actions">
+        <button className="btn-primary" onClick={authHandler} name="login">
+          Login
+        </button>
+        <button className="btn-secondary" onClick={authHandler} name="registration">
+          Register
+        </button>
+      </div>
     </div>
-  )
+  </div>
+)
 }
 
 export default AuthPage
