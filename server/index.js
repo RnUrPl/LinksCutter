@@ -14,18 +14,13 @@ app.use(express.json({extended: true}))
 app.use(cookieParser())
 app.use(cors({
     credentials: true,
-    origin: 'https://linkscutter-7.onrender.com',
+    origin: true,
   }))
 app.use('/api', router)
 app.use('/t', RedirectRouter)
 app.use(errorsMiddleware)
 
 if (process.env.NODE_ENV === 'production') {
-    app.use('/', express.static(path.join(__dirname, 'client', 'build')))
-  
-    app.get('*', (req, res) => {
-      res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
-    })
   }
 
 const PORT = process.env.PORT || 5000
