@@ -1,4 +1,4 @@
-import { $host, $authHost } from '../http/index'
+import { $authHost } from '../http/index'
 
 const config = {
     withCredentials: true,
