@@ -3,7 +3,6 @@ const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const UserDto = require("../dtos/userDto")
 const tokenService = require('./TokenService')
-const { Token } = require("../models/token")
 const ApiError = require("../exception/ApiError")
 
 class UserService{
