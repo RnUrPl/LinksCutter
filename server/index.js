@@ -14,7 +14,7 @@ app.use(express.json({extended: true}))
 app.use(cookieParser())
 app.use(cors({
     credentials: true,
-    origin: 'https://linkscutter-6.onrender.com',
+    origin: 'https://linkscutter-7.onrender.com',
   }))
 app.use('/api', router)
 app.use('/t', RedirectRouter)
