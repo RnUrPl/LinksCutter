@@ -3,6 +3,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 const router = require('./routes/index');
 const RedirectRouter = require('./routes/redirectRouter');
+const path = require('path')
 const app = express()
 
 const cors = require('cors')
